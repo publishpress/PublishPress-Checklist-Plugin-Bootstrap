@@ -71,7 +71,7 @@ if ( ! defined( 'PP_CHECKLIST_BOOTSTRAP_LOADED' ) ) {
 		define( 'PP_CHECKLIST_BOOTSTRAP_LOADED', 1 );
 
 		// Initialize the plugin's code.
-		$addon = new PublishPress_Checklist_Bootstrap\Addon;
+		$addon  = new PublishPress_Checklist_Bootstrap\Addon;
 
 		add_action( 'pp_checklist_load_addons', [ $addon, 'action_load_addons' ] );
 	}

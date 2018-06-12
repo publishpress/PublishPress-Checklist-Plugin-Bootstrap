@@ -15,13 +15,14 @@ namespace PublishPress_Checklist_Bootstrap\Requirement;
 defined( 'ABSPATH' ) or die( 'No direct script access allowed.' );
 
 use PublishPress\Addon\Content_checklist\Requirement\Base_simple;
+use PublishPress\Addon\Content_checklist\Requirement\Interface_required;
 
 /**
  * Class Plugin
  *
  * @package PublishPress_Checklist_Bootstrap
  */
-class Custom_Text extends Base_simple {
+class Custom_Text extends Base_simple implements Interface_required {
 	/**
 	 * The name of the requirement, in a slug format
 	 *

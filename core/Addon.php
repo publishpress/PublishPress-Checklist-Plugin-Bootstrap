@@ -25,21 +25,12 @@ class Addon {
 	 * We use this to set the hooks to load our custom filters.
 	 */
 	public function action_load_addons() {
-		add_action( 'pp_checklist_enqueue_scripts', [ $this, 'enqueue_admin_scripts' ] );
 		add_filter( 'pp_checklist_post_type_requirements', [ $this, 'filter_post_type_requirements' ], 10, 2 );
-	}
 
-	/**
-	 * Enqueue scripts and stylesheets for the admin pages.
-	 */
-	public function enqueue_admin_scripts() {
-		wp_enqueue_script(
-			'pp-checklist-bootstrap-admin',
-			plugins_url( '/assets/js/requirements.js', PP_CHECKLIST_BOOTSTRAP_PLUGIN_FILE ),
-			[ 'jquery', 'pp-checklist-requirements' ],
-			PUBLISHPRESS_WOOCOMMERCE_CHECKLIST_VERSION,
-			true
-		);
+		$assets = new Assets();
+
+		add_action( 'pp_checklist_enqueue_scripts', [ $assets, 'enqueue_admin_scripts' ] );
+		add_filter( 'mce_external_plugins', [ $assets, 'add_mce_plugin' ] );
 	}
 
 	/**
