@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9fcf6b36ff97de7c7583b514edb5f68",
+    "content-hash": "a7490d9d7181eb5603b6788041014d70",
     "packages": [
         {
             "name": "publishpress/addon-framework",
@@ -30,6 +30,33 @@
                 }
             ],
             "time": "2018-06-11T19:24:49+00:00"
+        },
+        {
+            "name": "publishpress/wordpress-plugin-builder",
+            "version": "2.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OSTraining/WordPress-Plugin-Builder",
+                "reference": "92d16a9b3f48898e09ccf9f89cf0e1e9467c8a63"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PublishPress\\Builder\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "PublishPress",
+                    "email": "help@publishpress.com",
+                    "homepage": "https://publishpress.com"
+                }
+            ],
+            "description": "Base class for WordPress plugin builder",
+            "time": "2018-05-17T22:26:21+00:00"
         }
     ],
     "packages-dev": [],

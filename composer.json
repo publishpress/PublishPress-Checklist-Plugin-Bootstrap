@@ -16,6 +16,10 @@
   "repositories": [
     {
       "type": "git",
+      "url": "https://github.com/OSTraining/WordPress-Plugin-Builder"
+    },
+    {
+      "type": "git",
       "url": "https://github.com/OSTraining/PublishPress-Addon-Framework"
     }
   ],
@@ -24,6 +28,7 @@
     "preferred-install": "dist"
   },
   "require": {
-    "publishpress/addon-framework": "^1"
+    "publishpress/addon-framework": "^1",
+    "publishpress/wordpress-plugin-builder": "^2"
   }
 }
