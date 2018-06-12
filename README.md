@@ -3,8 +3,6 @@ PublishPress Checklist Plugin Bootstrap
 
 Demo project to show how to extend the checklist add-on adding custom requirements to the checklist.
 
-![PublishPress Content Checklist Logo](https://publishpress.com/wp-content/uploads/2017/03/prepublishing-checklists.jpg)
-
 ## First steps
 
 You can easily extend the PublishPress Content Checklist add-on cloning and adapting this project. It is a WordPress plugin designed to work as a base for your own plugin.
@@ -19,6 +17,7 @@ You can easily extend the PublishPress Content Checklist add-on cloning and adap
 
 * Update composer dependencies, running `$ composer update --no-dev`
 * Refactor constants using a custom prefix. Replace PP_CHECKLIST_BOOTSTRAP with your custom and unique prefix.
+* Refactor the code according to the requirement you want to implement.
 
 
 
