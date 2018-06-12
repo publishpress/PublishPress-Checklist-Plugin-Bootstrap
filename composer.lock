@@ -1,0 +1,43 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f9fcf6b36ff97de7c7583b514edb5f68",
+    "packages": [
+        {
+            "name": "publishpress/addon-framework",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OSTraining/PublishPress-Addon-Framework",
+                "reference": "4bc1afa017668aa9b72151e2fba031b0413fcc19"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PublishPressAddonFramework\\": "library/"
+                }
+            },
+            "license": [
+                "GPL-2"
+            ],
+            "authors": [
+                {
+                    "name": "PublishPress",
+                    "email": "help@publishpress.com"
+                }
+            ],
+            "time": "2018-04-20T19:12:10+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

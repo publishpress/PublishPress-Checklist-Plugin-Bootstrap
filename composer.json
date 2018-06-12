@@ -1,0 +1,29 @@
+{
+  "name": "publishpress/publishpress-checklist-plugin-bootstrap",
+  "type": "wordpress-plugin",
+  "license": "GPL-2",
+  "authors": [
+    {
+      "name": "PublishPress",
+      "email": "help@publishpress.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PublishPress_Checklist_Bootstrap\\": "core/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/OSTraining/PublishPress-Addon-Framework"
+    }
+  ],
+  "minimum-stability": "stable",
+  "config": {
+    "preferred-install": "dist"
+  },
+  "require": {
+    "publishpress/addon-framework": "^1"
+  }
+}
