@@ -42,18 +42,20 @@ class Custom_Text extends Base_simple {
 	}
 
 	/**
-	 * Returns the current status of the requirement.
+	 * Returns the current status of the requirement, the status read when opening the post
+	 * form for example.
 	 *
 	 * @param  stdClass $post
 	 * @param  mixed    $option_value
 	 *
-	 * @return mixed
+	 * @return bool
 	 */
 	public function get_current_status( $post, $option_value ) {
-		$product = $this->get_product( $post->ID );
+		// The current status will be true if the post's content has the word "PublishPress"
+		$expected_word = 'PublishPress';
 
-		$sku = $product->get_sku();
-
-		return ! empty( $sku );
+		// Yeah, I know it will not match only entire words, but fragments too. But this is
+		// just an example of what you can test here. Just make sure to return a boolean value.
+		return substr_count( $post->post_content, $expected_word ) > 0;
 	}
 }

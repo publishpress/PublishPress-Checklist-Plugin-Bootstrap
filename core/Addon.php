@@ -19,17 +19,7 @@ defined( 'ABSPATH' ) or die( 'No direct script access allowed.' );
  *
  * @package PublishPress_Checklist_Bootstrap
  */
-class Plugin {
-	/**
-	 * Initialize the plugin's class.
-	 */
-	public function init() {
-		/**
-		 *
-		 */
-		add_action( 'pp_checklist_load_addons', [ $this, 'action_load_addons' ] );
-	}
-
+class Addon {
 	/**
 	 * Action triggered before load requirements, but after loading the add-ons.
 	 * We use this to set the hooks to load our custom filters.
@@ -65,6 +55,7 @@ class Plugin {
 
 		switch ( $post_type ) {
 			case 'page':
+			case 'post':
 				$classes = [
 					'\\PublishPress_Checklist_Bootstrap\\Requirement\\Custom_Text',
 				];

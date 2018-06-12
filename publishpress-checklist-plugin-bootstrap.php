@@ -56,7 +56,7 @@ if ( ! defined( 'PP_CHECKLIST_BOOTSTRAP_LOADED' ) ) {
 
 	/**
 	 * Instantiate the PublishPress Add-on Framework. It is a simple framework
-	 * used to check PublishPress requirements. It is a dependency managed using
+	 * used to check PublishPress requirements. It is a dependency managed by
 	 * composer.
 	 */
 	$initializer = new PublishPressAddonFramework\Initializer(
@@ -65,13 +65,14 @@ if ( ! defined( 'PP_CHECKLIST_BOOTSTRAP_LOADED' ) ) {
 	);
 
 	// Check if PublishPress is installed and at the correct version.
-	if ( $initializer->is_publishpress_installed() ) {
+	if ( $initializer->isPublishPressInstalled() ) {
 
 		// Define a constant to be a flag saying it is already loaded.
 		define( 'PP_CHECKLIST_BOOTSTRAP_LOADED', 1 );
 
 		// Initialize the plugin's code.
-		$plugin = new PublishPress_Checklist_Bootstrap\Plugin;
-		$plugin->init();
+		$addon = new PublishPress_Checklist_Bootstrap\Addon;
+
+		add_action( 'pp_checklist_load_addons', [ $addon, 'action_load_addons' ] );
 	}
 }
