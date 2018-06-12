@@ -8,11 +8,11 @@
     "packages": [
         {
             "name": "publishpress/addon-framework",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OSTraining/PublishPress-Addon-Framework",
-                "reference": "4bc1afa017668aa9b72151e2fba031b0413fcc19"
+                "reference": "90f283c295016188c8594684708c8beef32122bb"
             },
             "type": "library",
             "autoload": {
@@ -29,7 +29,7 @@
                     "email": "help@publishpress.com"
                 }
             ],
-            "time": "2018-04-20T19:12:10+00:00"
+            "time": "2018-06-11T19:24:49+00:00"
         }
     ],
     "packages-dev": [],
