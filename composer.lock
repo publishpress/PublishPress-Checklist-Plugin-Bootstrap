@@ -1,69 +1,119 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7490d9d7181eb5603b6788041014d70",
+    "content-hash": "9763663ffc80f28a6394324fa1e7e15e",
     "packages": [
         {
-            "name": "publishpress/addon-framework",
-            "version": "1.0.2",
+            "name": "alledia/publishpress-addon-library",
+            "version": "dev-development",
             "source": {
                 "type": "git",
-                "url": "https://github.com/OSTraining/PublishPress-Addon-Framework",
-                "reference": "90f283c295016188c8594684708c8beef32122bb"
+                "url": "https://github.com/AllediaWordPress/PublishPress-Addon-Library.git",
+                "reference": "0b340d3e825ae25296f719b5d4f8d2e3406cfa44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AllediaWordPress/PublishPress-Addon-Library/zipball/0b340d3e825ae25296f719b5d4f8d2e3406cfa44",
+                "reference": "0b340d3e825ae25296f719b5d4f8d2e3406cfa44",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "PublishPressAddonFramework\\": "library/"
+                    "PublishPressAddonLibrary\\": "library/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "PublishPress",
-                    "email": "help@publishpress.com"
+                    "name": "Anderson Grudtner Martins",
+                    "email": "anderson@grudtner.me",
+                    "homepage": "http://anderson.grudtner.me",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Alledia",
+                    "email": "help@alledia.com",
+                    "homepage": "https://alledia.com"
                 }
             ],
-            "time": "2018-06-11T19:24:49+00:00"
+            "time": "2018-11-15T15:42:54+00:00"
         },
         {
-            "name": "publishpress/wordpress-plugin-builder",
-            "version": "2.1.6",
+            "name": "alledia/wordpress-plugin-builder",
+            "version": "dev-development",
             "source": {
                 "type": "git",
-                "url": "https://github.com/OSTraining/WordPress-Plugin-Builder",
-                "reference": "92d16a9b3f48898e09ccf9f89cf0e1e9467c8a63"
+                "url": "https://github.com/AllediaWordPress/WordPress-Plugin-Builder.git",
+                "reference": "66bbe74c1cd2e3cf255fce3a2573a5f962d141ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AllediaWordPress/WordPress-Plugin-Builder/zipball/66bbe74c1cd2e3cf255fce3a2573a5f962d141ce",
+                "reference": "66bbe74c1cd2e3cf255fce3a2573a5f962d141ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "PublishPress\\Builder\\": "src/"
+                    "Alledia\\Builder\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "Alledia",
+                    "email": "help@alledia.com"
+                },
+                {
+                    "name": "Anderson Grudtner Martins",
+                    "email": "anderson@grudtner.me",
+                    "homepage": "http://anderson.grudtner.me",
+                    "role": "Lead Developer"
+                },
                 {
                     "name": "PublishPress",
                     "email": "help@publishpress.com",
                     "homepage": "https://publishpress.com"
+                },
+                {
+                    "name": "UpStream",
+                    "email": "help@upstream.com"
                 }
             ],
-            "description": "Base class for WordPress plugin builder",
-            "time": "2018-05-17T22:26:21+00:00"
+            "description": "Base classes and Phing scripts for building WordPress plugins",
+            "keywords": [
+                "builder",
+                "phing",
+                "plugin",
+                "wordpress"
+            ],
+            "time": "2018-11-13T17:47:40+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "alledia/publishpress-addon-library": 20,
+        "alledia/wordpress-plugin-builder": 20
+    },
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []

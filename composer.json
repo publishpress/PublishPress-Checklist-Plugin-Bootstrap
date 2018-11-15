@@ -13,22 +13,13 @@
       "PublishPress_Checklist_Bootstrap\\": "core/"
     }
   },
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/OSTraining/WordPress-Plugin-Builder"
-    },
-    {
-      "type": "git",
-      "url": "https://github.com/OSTraining/PublishPress-Addon-Framework"
-    }
-  ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "config": {
     "preferred-install": "dist"
   },
   "require": {
-    "publishpress/addon-framework": "^1",
-    "publishpress/wordpress-plugin-builder": "^2"
+    "alledia/publishpress-addon-library": "dev-development",
+    "alledia/wordpress-plugin-builder": "dev-development"
   }
 }
