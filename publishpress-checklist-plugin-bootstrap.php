@@ -14,7 +14,7 @@
  * @publishpress-checklist-plugin-bootstrap
  * Plugin Name: PublishPress Checklist Plugin Bootstrap
  * Plugin URI:  https://publishpress.com/
- * Version: 1.0.0
+ * Version: 1.0.1
  * Description: Add a custom checklist as example to content
  * Author:      PublishPress
  * Author URI:  https://publishpress.com
@@ -47,7 +47,7 @@ if ( ! defined( 'PUBLISHPRESS_CHECKLIST_BOOTSTRAP_LOADED' ) ) {
 		'publishpress-checklist-plugin-bootstrap/publishpress-checklist-plugin-bootstrap.php' );
 
     // Define the constant to store the plugin version
-    define( 'PUBLISHPRESS_CHECKLIST_BOOTSTRAP_VERSION', '1.0.0' );
+    define( 'PUBLISHPRESS_CHECKLIST_BOOTSTRAP_VERSION', '1.0.1' );
 
 	/**
 	 * Define here the minimum version of PublishPress required by your code.
