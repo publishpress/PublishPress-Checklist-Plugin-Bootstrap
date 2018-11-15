@@ -28,7 +28,7 @@ class Assets {
 			'pp-checklist-bootstrap-admin',
 			plugins_url( '/assets/js/requirements.js', PP_CHECKLIST_BOOTSTRAP_PLUGIN_FILE ),
 			[ 'jquery', 'pp-checklist-requirements' ],
-			PUBLISHPRESS_WOOCOMMERCE_CHECKLIST_VERSION,
+            PUBLISHPRESS_CHECKLIST_BOOTSTRAP_VERSION,
 			true
 		);
 
