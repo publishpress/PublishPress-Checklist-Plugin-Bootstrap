@@ -26,7 +26,7 @@ class Assets {
 	public function enqueue_admin_scripts() {
 		wp_enqueue_script(
 			'pp-checklist-bootstrap-admin',
-			plugins_url( '/assets/js/requirements.js', PP_CHECKLIST_BOOTSTRAP_PLUGIN_FILE ),
+			plugins_url( '/assets/js/requirements.js', PUBLISHPRESS_CHECKLIST_BOOTSTRAP_PLUGIN_FILE ),
 			[ 'jquery', 'pp-checklist-requirements' ],
             PUBLISHPRESS_CHECKLIST_BOOTSTRAP_VERSION,
 			true
@@ -51,8 +51,8 @@ class Assets {
 	 * @return array
 	 */
 	public function add_mce_plugin( $plugin_array ) {
-		$plugin_array['pp_checklist_bootstrap'] =
-			plugin_dir_url( PP_CHECKLIST_BOOTSTRAP_PLUGIN_FILE )
+		$plugin_array['PUBLISHPRESS_CHECKLIST_BOOTSTRAP'] =
+			plugin_dir_url( PUBLISHPRESS_CHECKLIST_BOOTSTRAP_PLUGIN_FILE )
 			. 'assets/js/tinymce-pp-checklist-bootstrap.js';
 
 		return $plugin_array;

@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Avoid to load it twice.
-if ( ! defined( 'PP_CHECKLIST_BOOTSTRAP_LOADED' ) ) {
+if ( ! defined( 'PUBLISHPRESS_CHECKLIST_BOOTSTRAP_LOADED' ) ) {
 
 	/**
 	 * Call the composer's autoload. We advise to use it for your own libraries.
@@ -38,20 +38,23 @@ if ( ! defined( 'PP_CHECKLIST_BOOTSTRAP_LOADED' ) ) {
 	/**
 	 * Define the plugin's name.
 	 */
-	if ( ! defined( 'PP_CHECKLIST_BOOTSTRAP_PLUGIN_NAME' ) ) {
-		define( 'PP_CHECKLIST_BOOTSTRAP_PLUGIN_NAME', 'PublishPress Checklist Plugin Bootstrap' );
+	if ( ! defined( 'PUBLISHPRESS_CHECKLIST_BOOTSTRAP_PLUGIN_NAME' ) ) {
+		define( 'PUBLISHPRESS_CHECKLIST_BOOTSTRAP_PLUGIN_NAME', 'PublishPress Checklist Plugin Bootstrap' );
 	}
 
 	// Define the constant to store the plugins' file path.
-	define( 'PP_CHECKLIST_BOOTSTRAP_PLUGIN_FILE',
+	define( 'PUBLISHPRESS_CHECKLIST_BOOTSTRAP_PLUGIN_FILE',
 		'publishpress-checklist-plugin-bootstrap/publishpress-checklist-plugin-bootstrap.php' );
+
+    // Define the constant to store the plugin version
+    define( 'PUBLISHPRESS_CHECKLIST_BOOTSTRAP_VERSION', '1.0.0' );
 
 	/**
 	 * Define here the minimum version of PublishPress required by your code.
 	 * Use the most recent release when starting developing.
 	 */
-	if ( ! defined( 'PP_CHECKLIST_BOOTSTRAP_MIN_PARENT_VERSION' ) ) {
-		define( 'PP_CHECKLIST_BOOTSTRAP_MIN_PARENT_VERSION', '1.12.0' );
+	if ( ! defined( 'PUBLISHPRESS_CHECKLIST_BOOTSTRAP_MIN_PARENT_VERSION' ) ) {
+		define( 'PUBLISHPRESS_CHECKLIST_BOOTSTRAP_MIN_PARENT_VERSION', '1.12.0' );
 	}
 
 	/**
@@ -60,15 +63,15 @@ if ( ! defined( 'PP_CHECKLIST_BOOTSTRAP_LOADED' ) ) {
 	 * composer.
 	 */
 	$initializer = new PublishPressAddonLibrary\Initializer(
-		PP_CHECKLIST_BOOTSTRAP_PLUGIN_NAME,
-		PP_CHECKLIST_BOOTSTRAP_MIN_PARENT_VERSION
+		PUBLISHPRESS_CHECKLIST_BOOTSTRAP_PLUGIN_NAME,
+		PUBLISHPRESS_CHECKLIST_BOOTSTRAP_MIN_PARENT_VERSION
 	);
 
 	// Check if PublishPress is installed and at the correct version.
 	if ( $initializer->isPublishPressInstalled() ) {
 
 		// Define a constant to be a flag saying it is already loaded.
-		define( 'PP_CHECKLIST_BOOTSTRAP_LOADED', 1 );
+		define( 'PUBLISHPRESS_CHECKLIST_BOOTSTRAP_LOADED', 1 );
 
 		// Initialize the plugin's code.
 		$addon  = new PublishPress_Checklist_Bootstrap\Addon;

@@ -16,7 +16,7 @@ You can easily extend the PublishPress Content Checklist add-on cloning and adap
 ## Developing
 
 * Update composer dependencies, running `$ composer update --no-dev`
-* Refactor constants using a custom prefix. Replace PP_CHECKLIST_BOOTSTRAP with your custom and unique prefix.
+* Refactor constants using a custom prefix. Replace PUBLISHPRESS_CHECKLIST_BOOTSTRAP with your custom and unique prefix.
 * Refactor the code according to the requirement you want to implement.
 
 
