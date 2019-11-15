@@ -1,4 +1,4 @@
-=== PublishPress Checklist Plugin Bootstrap ===
+=== PublishPress Checklists Plugin Bootstrap ===
 Contributors: publishpress
 Author: PublishPress
 Author URI: https://publishpress.com

@@ -1,26 +1,26 @@
 <?php
 /**
- * PublishPress Checklist Plugin Bootstrap.
+ * PublishPress Checklists Plugin Bootstrap.
  *
  * @link        https://publishpress.com/addons/content-checklist/
- * @package     PublishPress\Checklist_plugin_bootstrap
+ * @package     PublishPress\Checklists_plugin_bootstrap
  * @author      PublishPress <help@publishpress.com>
- * @copyright   Copyright (C) 2018 PublishPress. All rights reserved.
+ * @copyright   Copyright (C) 2019 PublishPress. All rights reserved.
  * @license     GPLv2 or later
  * @since       1.0.0
  */
 
-namespace PublishPress_Checklist_Bootstrap\Requirement;
+namespace PublishPress_Checklists_Bootstrap\Requirement;
 
 defined( 'ABSPATH' ) or die( 'No direct script access allowed.' );
 
-use PublishPress\Addon\Content_checklist\Requirement\Base_simple;
-use PublishPress\Addon\Content_checklist\Requirement\Interface_required;
+use PublishPress\Checklists\Core\Requirement\Base_simple;
+use PublishPress\Checklists\Core\Requirement\Interface_required;
 
 /**
  * Class Plugin
  *
- * @package PublishPress_Checklist_Bootstrap
+ * @package PublishPress_Checklists_Bootstrap
  */
 class Custom_Text extends Base_simple implements Interface_required {
 	/**
@@ -37,9 +37,9 @@ class Custom_Text extends Base_simple implements Interface_required {
 	 */
 	public function init_language() {
 		$this->lang['label_settings'] = esc_html__( 'Say "PublishPress" in the content',
-			'publishpress-checklist-plugin-bootstrap' );
+			'publishpress-checklists-plugin-bootstrap' );
 		$this->lang['label']          = esc_html__( 'Say "PublishPress" in the content',
-			'publishpress-checklist-plugin-bootstrap' );
+			'publishpress-checklists-plugin-bootstrap' );
 	}
 
 	/**

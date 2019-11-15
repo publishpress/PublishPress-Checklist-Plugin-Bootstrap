@@ -4,19 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9763663ffc80f28a6394324fa1e7e15e",
+    "content-hash": "cd248e0512a1e30edd2cb90518d37c17",
     "packages": [
         {
             "name": "alledia/publishpress-addon-library",
             "version": "dev-development",
             "source": {
                 "type": "git",
-                "url": "https://github.com/AllediaWordPress/PublishPress-Addon-Library.git",
+                "url": "https://github.com/publishpress/PublishPress-Addon-Library.git",
                 "reference": "0b340d3e825ae25296f719b5d4f8d2e3406cfa44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AllediaWordPress/PublishPress-Addon-Library/zipball/0b340d3e825ae25296f719b5d4f8d2e3406cfa44",
+                "url": "https://api.github.com/repos/publishpress/PublishPress-Addon-Library/zipball/0b340d3e825ae25296f719b5d4f8d2e3406cfa44",
                 "reference": "0b340d3e825ae25296f719b5d4f8d2e3406cfa44",
                 "shasum": ""
             },
@@ -50,16 +50,16 @@
         },
         {
             "name": "alledia/wordpress-plugin-builder",
-            "version": "dev-development",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/AllediaWordPress/WordPress-Plugin-Builder.git",
-                "reference": "66bbe74c1cd2e3cf255fce3a2573a5f962d141ce"
+                "url": "https://github.com/publishpress/WordPress-Plugin-Builder.git",
+                "reference": "935fcea591a2a157882a974d4ee3a5737303cd7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AllediaWordPress/WordPress-Plugin-Builder/zipball/66bbe74c1cd2e3cf255fce3a2573a5f962d141ce",
-                "reference": "66bbe74c1cd2e3cf255fce3a2573a5f962d141ce",
+                "url": "https://api.github.com/repos/publishpress/WordPress-Plugin-Builder/zipball/935fcea591a2a157882a974d4ee3a5737303cd7b",
+                "reference": "935fcea591a2a157882a974d4ee3a5737303cd7b",
                 "shasum": ""
             },
             "require": {
@@ -77,23 +77,23 @@
             ],
             "authors": [
                 {
+                    "name": "PublishPress",
+                    "email": "help@publishpress.com",
+                    "homepage": "https://publishpress.com"
+                },
+                {
                     "name": "Alledia",
                     "email": "help@alledia.com"
+                },
+                {
+                    "name": "UpStream",
+                    "email": "help@upstream.com"
                 },
                 {
                     "name": "Anderson Grudtner Martins",
                     "email": "anderson@grudtner.me",
                     "homepage": "http://anderson.grudtner.me",
                     "role": "Lead Developer"
-                },
-                {
-                    "name": "PublishPress",
-                    "email": "help@publishpress.com",
-                    "homepage": "https://publishpress.com"
-                },
-                {
-                    "name": "UpStream",
-                    "email": "help@upstream.com"
                 }
             ],
             "description": "Base classes and Phing scripts for building WordPress plugins",
@@ -103,15 +103,14 @@
                 "plugin",
                 "wordpress"
             ],
-            "time": "2018-11-13T17:47:40+00:00"
+            "time": "2019-05-08T17:44:59+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "alledia/publishpress-addon-library": 20,
-        "alledia/wordpress-plugin-builder": 20
+        "alledia/publishpress-addon-library": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

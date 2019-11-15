@@ -1,5 +1,5 @@
 {
-  "name": "publishpress/publishpress-checklist-plugin-bootstrap",
+  "name": "publishpress/publishpress-checklists-plugin-bootstrap",
   "type": "wordpress-plugin",
   "license": "GPL-2",
   "authors": [
@@ -10,7 +10,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "PublishPress_Checklist_Bootstrap\\": "core/"
+      "PublishPress_Checklists_Bootstrap\\": "core/"
     }
   },
   "minimum-stability": "dev",
@@ -20,6 +20,6 @@
   },
   "require": {
     "alledia/publishpress-addon-library": "dev-development",
-    "alledia/wordpress-plugin-builder": "dev-development"
+    "alledia/wordpress-plugin-builder": "^2.1"
   }
 }
