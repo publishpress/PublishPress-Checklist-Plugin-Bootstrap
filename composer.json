@@ -19,7 +19,9 @@
     "preferred-install": "dist"
   },
   "require": {
+    "php": ">=5.6.20",
+    "phing/phing": "*",
     "alledia/publishpress-addon-library": "dev-development",
-    "alledia/wordpress-plugin-builder": "^2.1"
+    "alledia/wordpress-plugin-builder": "^2.5"
   }
 }
