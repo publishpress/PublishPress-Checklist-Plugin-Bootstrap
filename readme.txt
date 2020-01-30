@@ -1,4 +1,4 @@
-=== PublishPress Checklist Plugin Bootstrap ===
+=== PublishPress Checklists Plugin Bootstrap ===
 Contributors: publishpress
 Author: PublishPress
 Author URI: https://publishpress.com
@@ -6,7 +6,7 @@ Tags: publishpress, checklist
 Requires at least: 4.6
 Requires PHP: 5.4
 Tested up to: 4.9.5
-Stable tag: 1.0.1
+Stable tag: 2.0.0
 WC requires at least: 3.0.0
 WC tested up to: 3.3.5
 License: GPLv2 or later

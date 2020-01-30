@@ -4,19 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9763663ffc80f28a6394324fa1e7e15e",
+    "content-hash": "22f4d83646e0b40f35c0c6fe928c9cb0",
     "packages": [
         {
             "name": "alledia/publishpress-addon-library",
             "version": "dev-development",
             "source": {
                 "type": "git",
-                "url": "https://github.com/AllediaWordPress/PublishPress-Addon-Library.git",
+                "url": "https://github.com/publishpress/PublishPress-Addon-Library.git",
                 "reference": "0b340d3e825ae25296f719b5d4f8d2e3406cfa44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AllediaWordPress/PublishPress-Addon-Library/zipball/0b340d3e825ae25296f719b5d4f8d2e3406cfa44",
+                "url": "https://api.github.com/repos/publishpress/PublishPress-Addon-Library/zipball/0b340d3e825ae25296f719b5d4f8d2e3406cfa44",
                 "reference": "0b340d3e825ae25296f719b5d4f8d2e3406cfa44",
                 "shasum": ""
             },
@@ -50,16 +50,16 @@
         },
         {
             "name": "alledia/wordpress-plugin-builder",
-            "version": "dev-development",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/AllediaWordPress/WordPress-Plugin-Builder.git",
-                "reference": "66bbe74c1cd2e3cf255fce3a2573a5f962d141ce"
+                "url": "https://github.com/publishpress/WordPress-Plugin-Builder.git",
+                "reference": "a327ca29a1f793f858a515aad586699ab5671115"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AllediaWordPress/WordPress-Plugin-Builder/zipball/66bbe74c1cd2e3cf255fce3a2573a5f962d141ce",
-                "reference": "66bbe74c1cd2e3cf255fce3a2573a5f962d141ce",
+                "url": "https://api.github.com/repos/publishpress/WordPress-Plugin-Builder/zipball/a327ca29a1f793f858a515aad586699ab5671115",
+                "reference": "a327ca29a1f793f858a515aad586699ab5671115",
                 "shasum": ""
             },
             "require": {
@@ -77,23 +77,23 @@
             ],
             "authors": [
                 {
+                    "name": "PublishPress",
+                    "email": "help@publishpress.com",
+                    "homepage": "https://publishpress.com"
+                },
+                {
                     "name": "Alledia",
                     "email": "help@alledia.com"
+                },
+                {
+                    "name": "UpStream",
+                    "email": "help@upstream.com"
                 },
                 {
                     "name": "Anderson Grudtner Martins",
                     "email": "anderson@grudtner.me",
                     "homepage": "http://anderson.grudtner.me",
                     "role": "Lead Developer"
-                },
-                {
-                    "name": "PublishPress",
-                    "email": "help@publishpress.com",
-                    "homepage": "https://publishpress.com"
-                },
-                {
-                    "name": "UpStream",
-                    "email": "help@upstream.com"
                 }
             ],
             "description": "Base classes and Phing scripts for building WordPress plugins",
@@ -103,18 +103,112 @@
                 "plugin",
                 "wordpress"
             ],
-            "time": "2018-11-13T17:47:40+00:00"
+            "time": "2020-01-06T21:59:27+00:00"
+        },
+        {
+            "name": "phing/phing",
+            "version": "2.16.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phingofficial/phing.git",
+                "reference": "d11c6328c450cb3cda4ffa6548aa9cd60f30dd17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phingofficial/phing/zipball/d11c6328c450cb3cda4ffa6548aa9cd60f30dd17",
+                "reference": "d11c6328c450cb3cda4ffa6548aa9cd60f30dd17",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "ext-pdo_sqlite": "*",
+                "mikey179/vfsstream": "^1.6",
+                "pdepend/pdepend": "2.x",
+                "pear/archive_tar": "1.4.x",
+                "pear/http_request2": "dev-trunk",
+                "pear/net_growl": "dev-trunk",
+                "pear/pear-core-minimal": "1.10.1",
+                "pear/versioncontrol_git": "@dev",
+                "pear/versioncontrol_svn": "~0.5",
+                "phpdocumentor/phpdocumentor": "2.x",
+                "phploc/phploc": "~2.0.6",
+                "phpmd/phpmd": "~2.2",
+                "phpunit/phpunit": ">=3.7",
+                "sebastian/git": "~1.0",
+                "sebastian/phpcpd": "2.x",
+                "siad007/versioncontrol_hg": "^1.0",
+                "simpletest/simpletest": "^1.1",
+                "squizlabs/php_codesniffer": "~2.2",
+                "symfony/yaml": "^2.8 || ^3.1 || ^4.0"
+            },
+            "suggest": {
+                "pdepend/pdepend": "PHP version of JDepend",
+                "pear/archive_tar": "Tar file management class",
+                "pear/versioncontrol_git": "A library that provides OO interface to handle Git repository",
+                "pear/versioncontrol_svn": "A simple OO-style interface for Subversion, the free/open-source version control system",
+                "phpdocumentor/phpdocumentor": "Documentation Generator for PHP",
+                "phploc/phploc": "A tool for quickly measuring the size of a PHP project",
+                "phpmd/phpmd": "PHP version of PMD tool",
+                "phpunit/php-code-coverage": "Library that provides collection, processing, and rendering functionality for PHP code coverage information",
+                "phpunit/phpunit": "The PHP Unit Testing Framework",
+                "sebastian/phpcpd": "Copy/Paste Detector (CPD) for PHP code",
+                "siad007/versioncontrol_hg": "A library for interfacing with Mercurial repositories.",
+                "tedivm/jshrink": "Javascript Minifier built in PHP"
+            },
+            "bin": [
+                "bin/phing"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.16.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "classes/phing/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "classes"
+            ],
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Michiel Rook",
+                    "email": "mrook@php.net"
+                },
+                {
+                    "name": "Phing Community",
+                    "homepage": "https://www.phing.info/trac/wiki/Development/Contributors"
+                }
+            ],
+            "description": "PHing Is Not GNU make; it's a PHP project build system or build tool based on Apache Ant.",
+            "homepage": "https://www.phing.info/",
+            "keywords": [
+                "build",
+                "phing",
+                "task",
+                "tool"
+            ],
+            "time": "2020-01-03T10:18:48+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "alledia/publishpress-addon-library": 20,
-        "alledia/wordpress-plugin-builder": 20
+        "alledia/publishpress-addon-library": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.6.20"
+    },
     "platform-dev": []
 }
