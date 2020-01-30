@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd248e0512a1e30edd2cb90518d37c17",
+    "content-hash": "dcbe2369e559e4d5ca2f4e75a18eb334",
     "packages": [
         {
             "name": "alledia/publishpress-addon-library",
@@ -50,16 +50,16 @@
         },
         {
             "name": "alledia/wordpress-plugin-builder",
-            "version": "2.1.8",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/publishpress/WordPress-Plugin-Builder.git",
-                "reference": "935fcea591a2a157882a974d4ee3a5737303cd7b"
+                "reference": "a327ca29a1f793f858a515aad586699ab5671115"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/publishpress/WordPress-Plugin-Builder/zipball/935fcea591a2a157882a974d4ee3a5737303cd7b",
-                "reference": "935fcea591a2a157882a974d4ee3a5737303cd7b",
+                "url": "https://api.github.com/repos/publishpress/WordPress-Plugin-Builder/zipball/a327ca29a1f793f858a515aad586699ab5671115",
+                "reference": "a327ca29a1f793f858a515aad586699ab5671115",
                 "shasum": ""
             },
             "require": {
@@ -103,7 +103,7 @@
                 "plugin",
                 "wordpress"
             ],
-            "time": "2019-05-08T17:44:59+00:00"
+            "time": "2020-01-06T21:59:27+00:00"
         }
     ],
     "packages-dev": [],
