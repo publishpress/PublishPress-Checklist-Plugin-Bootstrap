@@ -3,10 +3,10 @@ Contributors: publishpress
 Author: PublishPress
 Author URI: https://publishpress.com
 Tags: publishpress, checklist
-Requires at least: 4.6
-Requires PHP: 5.4
-Tested up to: 4.9.5
-Stable tag: 2.0.0
+Requires at least: 4.7
+Requires PHP: 5.6
+Tested up to: 5.8
+Stable tag: 2.0.1
 WC requires at least: 3.0.0
 WC tested up to: 3.3.5
 License: GPLv2 or later
@@ -47,6 +47,15 @@ There're two ways to install PublishPress plugin:
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-= [1.0.0] - UNRELEASED =
+= [2.0.1] - Sep 29 2021 =
+
+* Fixed: Remove dependency of the deprecated library "alledia/publishpress-addon-library";
+
+= [2.0.0] - Jan 30 2019 =
+
+* Fixed: Refactored for PublishPress Checklists v2.0.0;
+* Fixed: Fix the version constants for assets;
+
+= [1.0.0] - Jun 13 2018 =
 
 * First release
