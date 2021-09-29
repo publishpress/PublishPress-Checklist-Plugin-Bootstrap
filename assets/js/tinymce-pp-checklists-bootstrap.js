@@ -4,7 +4,7 @@
  * @link        https://publishpress.com/addons/content-checklist/
  * @package     PublishPress\Checklists_plugin_bootstrap
  * @author      PublishPress <help@publishpress.com>
- * @copyright   Copyright (C) 2019 PublishPress. All rights reserved.
+ * @copyright   Copyright (C) 2021 PublishPress. All rights reserved.
  * @license     GPLv2 or later
  * @since       1.0.0
  */
