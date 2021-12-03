@@ -29,7 +29,7 @@ class Assets
         wp_enqueue_script(
             'pp-checklists-bootstrap-admin',
             plugins_url('/assets/js/requirements.js', PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_PLUGIN_FILE),
-            ['jquery', 'pp-checklists-global-checklists'],
+            ['jquery', 'pp-checklists-requirements'],
             PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_VERSION,
             true
         );
