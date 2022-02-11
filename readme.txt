@@ -6,7 +6,7 @@ Tags: publishpress, checklist
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.8
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 WC requires at least: 3.0.0
 WC tested up to: 3.3.5
 License: GPLv2 or later
