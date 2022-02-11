@@ -27,10 +27,17 @@ class Addon
      */
     public static function init()
     {
-        add_filter('publishpress_checklists_post_type_requirements', [__CLASS__, 'register_post_type_requirement'], 10, 2);
+        add_filter(
+            'publishpress_checklists_post_type_requirements',
+            [__CLASS__, 'register_post_type_requirement'],
+            10,
+            2
+        );
 
-        add_action('publishpress_checklists_enqueue_scripts', [__CLASS__, 'enqueue_admin_scripts']);
-        add_filter('mce_external_plugins', [__CLASS__, 'add_mce_plugin']);
+        add_action(
+            'publishpress_checklists_enqueue_scripts',
+            [__CLASS__, 'enqueue_admin_scripts']
+        );
     }
 
     /**
@@ -81,23 +88,5 @@ class Addon
                 'required_word' => 'PublishPress',
             ]
         );
-    }
-
-    /**
-     * Add the MCE plugin file to make the interface between the editor and
-     * the requirement meta box. This was the unique way that worked, making
-     * it loaded before the MCE is initialized, allowing to configure it.
-     *
-     * @param array $plugin_array
-     *
-     * @return array
-     */
-    public static function add_mce_plugin($plugin_array)
-    {
-        $plugin_array['PUBLISHPRESS_CHECKLISTS_BOOTSTRAP'] =
-            plugin_dir_url(PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_PLUGIN_FILE)
-            . 'assets/js/tinymce-pp-checklists-bootstrap.js';
-
-        return $plugin_array;
     }
 }

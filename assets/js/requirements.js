@@ -18,8 +18,10 @@
 
     if (PP_Checklists.is_gutenberg_active()) {
         /**
-         * For Gutemberg
+         * For Gutenberg
          */
+
+        // Is the task currently enabled for the post? We know checking if the element is in the DOM.
         if ($('#pp-checklists-req-custom_text').length > 0) {
             wp.data.subscribe(
                 function () {
