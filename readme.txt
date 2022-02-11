@@ -47,6 +47,10 @@ There're two ways to install PublishPress plugin:
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+= [2.0.2] - Feb 11 2022 =
+
+* Changed: Refactored the code to simplify the structure;
+
 = [2.0.1] - Sep 29 2021 =
 
 * Fixed: Remove dependency of the deprecated library "alledia/publishpress-addon-library";
