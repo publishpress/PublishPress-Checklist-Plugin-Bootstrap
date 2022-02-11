@@ -47,6 +47,6 @@ if (! defined('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_LOADED')) {
     // Define a constant to be a flag saying it is already loaded.
     define('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_LOADED', 1);
 
-    // Initialize the plugin's code.
+    // Initialize the plugin's code as an addon.
     add_action('publishpress_checklists_load_addons', ['PublishPressChecklistsBootstrap\\Addon', 'init']);
 }
