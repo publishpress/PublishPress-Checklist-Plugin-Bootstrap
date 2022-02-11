@@ -11,7 +11,7 @@ You can easily extend the PublishPress Checklists plugin cloning and adapting th
 * Rename the repository using your plugin's name
 * Refactor the code replacing "publishpress-checklists-plugin-bootstrap" with your plugin's name, but pay attention to the case of the original terms. If the original is lowercase, keep using lower-case. If the origianl is uppercase, keep using upper-case.
 * Rename the main plugin file
-* Rename the content of the readme.txt file
+* Refactor the content of the readme.txt file
 
 ## Developing
 
