@@ -20,13 +20,12 @@
  * Author URI:  https://publishpress.com
  */
 
-if ( ! defined('ABSPATH')) {
+if (! defined('ABSPATH')) {
     die('No direct script access allowed.');
 }
 
 // Avoid to load it twice.
-if ( ! defined('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_LOADED')) {
-
+if (! defined('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_LOADED')) {
     /**
      * Call the composer's autoload. We advise to use it for your own libraries.
      */
@@ -38,13 +37,15 @@ if ( ! defined('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_LOADED')) {
     /**
      * Define the plugin's name.
      */
-    if ( ! defined('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_PLUGIN_NAME')) {
+    if (! defined('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_PLUGIN_NAME')) {
         define('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_PLUGIN_NAME', 'PublishPress Checklists Plugin Bootstrap');
     }
 
     // Define the constant to store the plugins' file path.
-    define('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_PLUGIN_FILE',
-        'publishpress-checklists-plugin-bootstrap/publishpress-checklists-plugin-bootstrap.php');
+    define(
+        'PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_PLUGIN_FILE',
+        'publishpress-checklists-plugin-bootstrap/publishpress-checklists-plugin-bootstrap.php'
+    );
 
     // Define the constant to store the plugin version
     define('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_VERSION', '2.0.1');

@@ -49,7 +49,7 @@
         /**
          * Get the content from TinyMCE on each update to calculate the status of the requirement.
          */
-        function update () {
+        function update() {
             var text,
                 count,
                 is_valid = false;
@@ -78,7 +78,7 @@
         }
 
         // For the editor.
-        $(document).on(PP_Checklists.EVENT_TINYMCE_LOADED, function(event, tinymce) {
+        $(document).on(PP_Checklists.EVENT_TINYMCE_LOADED, function (event, tinymce) {
             editor = tinymce.editors['content'];
 
             if (typeof editor !== 'undefined') {
