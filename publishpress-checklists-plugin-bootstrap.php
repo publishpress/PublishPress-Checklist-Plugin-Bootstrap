@@ -34,13 +34,6 @@ if (! defined('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_LOADED')) {
         require_once $autoloadPath;
     }
 
-    /**
-     * Define the plugin's name.
-     */
-    if (! defined('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_PLUGIN_NAME')) {
-        define('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_PLUGIN_NAME', 'PublishPress Checklists Plugin Bootstrap');
-    }
-
     // Define the constant to store the plugins' file path.
     define(
         'PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_PLUGIN_FILE',
