@@ -24,7 +24,7 @@ if (! defined('ABSPATH')) {
     die('No direct script access allowed.');
 }
 
-// Avoid to load it twice.
+// Avoid loading the plugin twice.
 if (! defined('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_LOADED')) {
     /**
      * Call the composer's autoload. We advise to use it for your own libraries.
