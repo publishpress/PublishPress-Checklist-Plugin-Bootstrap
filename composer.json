@@ -10,7 +10,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "PublishPress_Checklists_Bootstrap\\": "core/"
+      "PublishPressChecklistsBootstrap\\": "core/"
     }
   },
   "minimum-stability": "dev",

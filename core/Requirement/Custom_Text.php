@@ -10,7 +10,7 @@
  * @since       1.0.0
  */
 
-namespace PublishPress_Checklists_Bootstrap\Requirement;
+namespace PublishPressChecklistsBootstrap\Requirement;
 
 defined('ABSPATH') or die('No direct script access allowed.');
 
@@ -20,7 +20,7 @@ use PublishPress\Checklists\Core\Requirement\Interface_required;
 /**
  * Class Plugin
  *
- * @package PublishPress_Checklists_Bootstrap
+ * @package PublishPressChecklistsBootstrap
  */
 class Custom_Text extends Base_simple implements Interface_required
 {
