@@ -18,6 +18,7 @@ You can easily extend the PublishPress Checklists plugin cloning and adapting th
 * Update composer dependencies, running `$ composer update --no-dev`
 * Refactor constants using a custom prefix. Replace PUBLISHPRESS_CHECKLISTS_BOOTSTRAP with your custom and unique prefix.
 * Refactor the code according to the requirement you want to implement.
+* Make sure to deploy the plugin on a folder named with only lower case chars.
 
 ## Updating From PublishPress Content Checklist 1.4 to PublishPress Checklists 2.0
 
