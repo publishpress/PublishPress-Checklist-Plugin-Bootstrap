@@ -31,6 +31,8 @@ class Custom_Text extends Base_simple implements Interface_required
      */
     public $name = 'custom_text';
 
+    public $group = 'content';
+
     /**
      * Initialize the language strings for the instance
      *
