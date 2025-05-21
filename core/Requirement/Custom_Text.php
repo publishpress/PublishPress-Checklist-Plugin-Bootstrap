@@ -31,6 +31,11 @@ class Custom_Text extends Base_simple implements Interface_required
      */
     public $name = 'custom_text';
 
+    /**
+     * The group of the requirement. Used for the tabs
+     *
+     * @var string
+     */
     public $group = 'content';
 
     /**

@@ -37,7 +37,7 @@ if (! defined('PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_LOADED')) {
     // Define the constant to store the plugins' file path.
     define(
         'PUBLISHPRESS_CHECKLISTS_BOOTSTRAP_PLUGIN_FILE',
-        'publishpress-checklists-plugin-bootstrap/publishpress-checklists-plugin-bootstrap.php'
+        __FILE__
     );
 
     // Define the constant to store the plugin version
